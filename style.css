@@ -1,9 +1,13 @@
-@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
 @font-face 
 {
 	font-family: 'Agatho'; 
 	src: url('Agatho_Regular.otf');
+}
+
+@font-face 
+{
+	font-family: 'Poppins'; 
+	src: url('Poppins-Regular.otf');
 }
 
 *{
@@ -266,8 +270,8 @@ header ul li a {
 	.toggle.active {
 		position: fixed;
 		right: 20px;
-		background: url(close.png);
-		background-size: 20px;
+		background: url(menu.png);
+		background-size: 100px;
 		background-position: center;
 		background-repeat: no-repeat; 
 	}
@@ -350,12 +354,13 @@ header ul li a {
 	.thumb li:hover {
 		transform: translateY(-15px);
 	}
-	
+
 	.thumb li h3{
 	font-family: 'Poppins';
 	font-size: .8em;
 	line-height: .5em;
 	font-weight: 800;
+}
 }
 
 
