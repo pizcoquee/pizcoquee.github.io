@@ -1,0 +1,366 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+@font-face 
+{
+	font-family: 'Agatho'; 
+	src: url('Agatho_Regular.otf');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*font-family: 'Poppins', sans-serif;*/
+}
+
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #FFF5EC;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	position: relative;
+	max-width: 80px;
+}
+
+header .logo img{
+	width: 100px;
+}
+
+header ul {
+	position: relative;
+	display: flex;
+}
+
+header ul li{
+	list-style: none;
+}
+
+header ul li a {
+	display: inline-block;
+	color: #333;
+	font-weight: 500;
+	margin-left: 40px;
+	text-decoration: none;
+	font-family: 'Poppins';
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content .textBox{
+	position: relative;
+	max-width: 600px;
+}
+
+.content .textBox h3 {
+	color: #333;
+	font-size: 4em;
+	line-height: 1.4em;
+	font-weight: 800;
+}
+
+.content .textBox h2 {
+	color: #FC957E;
+	font-size: 4em;
+	line-height: 1.4em;
+	font-weight: 500;
+	font-family: 'Agatho';
+}
+
+.content .textBox p {
+	color: #FC957E;
+}
+
+.content .imgBox {
+	width: 600px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+	margin-top: 50px;
+}
+
+.content .imgBox img {
+	max-width: 340px;
+}
+
+.thumb {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+.thumb li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 6px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.thumb li:hover {
+	transform: translateY(-15px);
+}
+
+.thumb li h3{
+	font-family: 'Poppins';
+	font-size: 1.2em;
+	line-height: 1.4em;
+	font-weight: 500;
+}
+
+.thumb .wonyoung {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.thumb .sakura {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.thumb .yuri {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.thumb .yena {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.thumb .yujin {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.thumb .nako {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.thumb .eunbi {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.thumb .hyewon {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.thumb .hitomi {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.thumb .chaewon {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.thumb .minju {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.thumb .chaeyeon {
+	color: #000;
+	padding: 6px;
+	border: 1px solid #FC957E;
+}
+
+.sci {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sci li {
+	list-style: none;
+}
+
+.sci li a {
+	display: inline-block;
+	margin: 5px 0;
+	transform: scale(0.6);
+	filter: invert(1);
+}
+
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #e75480;
+	clip-path: circle(600px at right 800px);
+}
+
+@media (max-width: 991px){
+	header {
+		padding: 20px;
+	}
+
+	header .logo {
+		max-width: 60px;
+	}
+
+	header ul {
+		display: none;
+	}
+
+	.toggle {
+		position: relative;
+		width: 100px;
+		height: 100px;
+		cursor: pointer;
+		background: url(menu.png);
+		background-size: 100px;
+		background-position: center;
+		background-repeat: no-repeat; 
+		filter: invert(1);
+		z-index: 11;
+	}
+
+	.toggle.active {
+		position: fixed;
+		right: 20px;
+		background: url(close.png);
+		background-size: 20px;
+		background-position: center;
+		background-repeat: no-repeat; 
+	}
+
+	header ul.navigation.active {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: #fff;
+		z-index: 10;
+	}
+
+	header ul li a {
+		font-size: 1.5em;
+		margin: 5px 0;
+	}
+
+	section {
+		padding: 20px 20px 120px;
+	}
+
+	.content {
+		flex-direction: column;
+		margin-top: 100px;
+	}
+
+	.content .textBox h2 {
+		font-size: 2.5em;
+		margin-bottom: 15px;
+	} 
+
+	.content .textBox {
+		max-width: 100%;
+	}
+
+	.content .imgBox {
+		max-width: 100%;
+		justify-content: center;
+		margin-bottom: 80px;
+	}
+
+	.content .imgBox img{
+		max-width: 300px;
+	}
+
+	.circle {
+		clip-path: circle(400px at center bottom);
+	}
+
+	.sci {
+		background: #FC957E;
+		right: 0;
+		width: 50px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+
+	.thumb {
+		position: absolute;
+		left: 20%;
+		bottom: 20px;
+		transform: translateX(-10%);
+		display: block;
+	}
+
+	.thumb li {
+		margin-bottom: 20px;
+		list-style: none;
+		display: inline-block;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+
+	.thumb li:hover {
+		transform: translateY(-15px);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

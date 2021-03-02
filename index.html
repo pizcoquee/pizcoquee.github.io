@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IZ*ONE Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#" class="logo"><img src="logo.png"></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="#">Beranda</a></li>
+			</ul>
+		</header>
+
+		<div class="content">	
+			<div class="textBox">
+				<h3>IZ*ONE<br></h3><h2>	ONE, THE STORY</h2>
+				<h5>IZ*ONE ONLINE CONCERT : ONE THE STORY</h5>
+				<p>2021.3.13 (sat) 8pm - 3.14(sun) 5pm</p>
+			</div>
+			<div class="imgBox">	
+				<img src="Wonyoung.png" class="starbucks">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li class="wonyoung"><h3 onclick="imgSlider('Wonyoung.png'); changeCircleColor('#e75480')">Wonyoung</h3></li>
+			<li class="sakura"><h3 onclick="imgSlider('Sakura.png'); changeCircleColor('#fbcce7')">Sakura</h3></li>
+			<li class="yuri"><h3 onclick="imgSlider('Yuri.png'); changeCircleColor('#F0B253')">Yuri</h3></li>
+			<li class="yena"><h3 onclick="imgSlider('Yena.png'); changeCircleColor('#08a1ae')">Yena</h3></li>
+			<li class="yujin"><h3 onclick="imgSlider('Yujin.png'); changeCircleColor('#5784C1')">Yujin</h3></li>
+			<li class="nako"><h3 onclick="imgSlider('Nako.png'); changeCircleColor('#6495ed')">Nako</h3></li>
+			<li class="eunbi"><h3 onclick="imgSlider('Eunbi.png'); changeCircleColor('#C6BDEF')">Eunbi</h3></li>
+			<li class="hyewon"><h3 onclick="imgSlider('Hyewon.png'); changeCircleColor('#F37370')">Hyewon</h3></li>
+			<li class="hitomi"><h3 onclick="imgSlider('Hitomi.png'); changeCircleColor('#ffe5b4')">Hitomi</h3></li>
+			<li class="chaewon"><h3 onclick="imgSlider('Chaewon.png'); changeCircleColor('#a8e4a0')">Chaewon</h3></li>
+			<li class="minju"><h3 onclick="imgSlider('Minjoo.png'); changeCircleColor('#FFF')">Minju</h3></li>
+			<li class="chaeyeon"><h3 onclick="imgSlider('Chaeyeon.png'); changeCircleColor('#b0e0e6')">Chaeyeon</h3></li>
+		</ul>
+		<ul class="sci">
+			<li><a href="#"><img src="facebook.png"></a></li>
+			<li><a href="#"><img src="twitter.png"></a></li>
+			<li><a href="#"><img src="instagram.png"></a></li>
+		</ul>
+	</section>
+
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.starbucks').src = anything;
+		}
+
+		function changeCircleColor(color){
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>
